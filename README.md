@@ -2,6 +2,9 @@
 
 [![77777](https://user-images.githubusercontent.com/39264266/40175276-8db84a28-5a12-11e8-9509-7dc571c18f35.jpg)](https://www.youtube.com/watch?v=jbilbZStmxI&t=117s)
 
+
+↑ 위 사진을 클릭하면 해당 유튜브 페이지로 이동합니다.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

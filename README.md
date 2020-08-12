@@ -5,6 +5,8 @@
 
 ↑ 위 사진을 클릭하면 해당 유튜브 페이지로 이동합니다.
 
+[Resistance VR 카드보드용 게임 플레이 영상](https://www.youtube.com/watch?v=4ycKzkzdsoY&t=216sc)
+
 # 개요
 
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.

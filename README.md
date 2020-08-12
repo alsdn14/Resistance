@@ -5,11 +5,11 @@
 
 ↑ 위 사진을 클릭하면 해당 유튜브 페이지로 이동합니다.
 
-### Markdown
+## 개요
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
-``개요
+```개요
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
 

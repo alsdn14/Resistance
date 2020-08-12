@@ -9,7 +9,8 @@
 
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
-```개요
+```
+## 개요
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
 

@@ -33,6 +33,59 @@ GageTimer 가 1이 될경우 씬이 넘어가고
 충돌 대상의 태그가 "BOX" 가 아닐경우 GageTimer 을 0으로 하는 식으로 구현했습니다.
 
 
+```
+
+    public Image CursorGageImage;
+    
+    private Cardboard MagnetButton;
+    
+    public Vector3 ScreenCenter;
+    
+    private float GageTimer;
+    
+    void Start () {
+    
+        ScreenCenter = new Vector3(Camera.main.pixelWidth / 2,
+                                   Camera.main.pixelHeight / 2);
+				   
+        MagnetButton = GetComponent<Cardboard>();
+	
+	}
+	
+    void Update() {
+    
+        Ray ray = Camera.main.ScreenPointToRay(ScreenCenter);
+	
+        RaycastHit hit;
+	
+        CursorGageImage.fillAmount = GageTimer;
+	
+        if (Physics.Raycast(ray, out hit, 100.0f))
+	
+        {
+	
+            if (hit.collider.CompareTag("BOX"))
+	    
+            { 
+	    
+            GageTimer += 1.0f / 5.0f * Time.deltaTime;
+	    
+                if (GageTimer >= 1 || MagnetButton.Triggered)
+		
+                {
+                    Application.LoadLevel(3);
+		    
+                    GageTimer = 0;
+                }
+            }
+	else
+            GageTimer = 0;
+		    
+        }        
+    }
+
+```
+
 # Header 1
 ## Header 2
 ### Header 3

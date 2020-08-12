@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## ResistanceVR
 
 You can use the [editor on GitHub](https://github.com/alsdn14/Resistance/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

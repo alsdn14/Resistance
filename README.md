@@ -86,27 +86,68 @@ GageTimer 가 1이 될경우 씬이 넘어가고
 
 ```
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### 바닥에 떨어진 무기 교체
 
-1. Numbered
-2. List
+* 총들을 메인카메라 자식으로 두고 위치를 잡아둔다음
+Void Start 부분에
+권총을 제외한 총 오브젝트를 비활성화 시킨후
 
-**Bold** and _Italic_ and `Code` text
+* OntriggerEnter 함수를 이용하여 Collider가 Player태그를 가지고있는 오브젝트와 충돌이 있을경우
+Myweapon 오브젝트에 올려놓은 총을 제외한 다른 총들을 비활성화 시키는 방식으로 총 교체를 구현하였습니다.
+다른 총들에도 같은 스크립트를 씌워 오브젝트만 다르게 하기위해 Public 으로 변수선언을 하였습니다.
 
-[Link](url) and ![Image](src)
+
+
 ```
+    public GameObject MyWeapon;
+    
+    public GameObject WeaponOntheGround;
+    
+    public GameObject FirstWeapon;
+    
+    public GameObject SecondWeapon;
+    
+    public GameObject ThirdWeapon;
+    
+    public GameObject FifthWeapon;
+    
+    void Start()
+    {
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        MyWeapon.SetActive(false);
+	
+        SecondWeapon.SetActive(false);
+	
+        ThirdWeapon.SetActive(false);
+	
+        FifthWeapon.SetActive(false);
 
-### Jekyll Themes
+    }
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alsdn14/Resistance/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    void OnTriggerEnter(Collider _collider)
+    
+    {
+        Debug.Log("Trigger M4!");        
+	
+        if (_collider.gameObject.tag == "Player")        
+        {
+	
+            SoundManager2.instance.PlaySound();
+	    
+            MyWeapon.SetActive(true);
+	    
+            WeaponOntheGround.SetActive(false);
+	    
+            FirstWeapon.SetActive(false);
+	    
+            SecondWeapon.SetActive(false);
+	    
+            ThirdWeapon.SetActive(false);
+	    
+            FifthWeapon.SetActive(false);
+	    
+        }        
+    }
+   
+```

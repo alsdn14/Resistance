@@ -11,13 +11,11 @@ VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간�
 
 
 ## 주요 기술
-```
 
 * 참여도 : 개인프로젝트
 * UNITY, Visual Studio
 * C, C#
 * Git(Source Tree), GitHub
-```
 
 # Header 1
 ## Header 2

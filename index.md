@@ -1,10 +1,6 @@
 ## ResistanceVR
 
-You can use the [editor on GitHub](https://github.com/alsdn14/Resistance/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-[![77777](https://user-images.githubusercontent.com/39264266/40175276-8db84a28-5a12-11e8-9509-7dc571c18f35.jpg)](https://youtu.be/68gJDtt2TAc)
+[![77777](https://user-images.githubusercontent.com/39264266/40175276-8db84a28-5a12-11e8-9509-7dc571c18f35.jpg)](https://www.youtube.com/watch?v=jbilbZStmxI&t=117s)
 
 ### Markdown
 

@@ -5,7 +5,7 @@
 
 ↑ 위 사진을 클릭하면 해당 유튜브 페이지로 이동합니다.
 
-## 개요
+# 개요
 
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
@@ -16,6 +16,22 @@ VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간�
 * UNITY, Visual Studio
 * C, C#
 * Git(Source Tree), GitHub
+
+###Contents
+
+### AIM 과 AIM 게이지
+
+
+* 커서 이미지(CursorGageImage)와 카메라 중앙지점을 저장하는 Vector3 변수(ScreenCenter) 
+커서게이지를 증가시키기 위한 변수(GageTimer) 를 선언한 후
+카메라 중앙지점을 저장하는 Vector3 변수에 카메라 높이 픽셀과 넓이픽셀의 1/2을 저장하고 ( 카메라중앙 )
+
+* 그 카메라 중앙좌표에 Raycast를 생성하고,
+레이캐스트의 충돌좌표를 받아 충돌상태를 확인한후 그 충돌 대상의 태그가 "BOX" 일 경우
+커서게이지 이미지의 Fillamount 값은 GageTimer 값과 같게 하고 GageTimer 를 5초동안 GageTimer 를 1로 증가시킵니다.
+GageTimer 가 1이 될경우 씬이 넘어가고 
+충돌 대상의 태그가 "BOX" 가 아닐경우 GageTimer 을 0으로 하는 식으로 구현했습니다.
+
 
 # Header 1
 ## Header 2

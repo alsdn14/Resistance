@@ -8,7 +8,7 @@
 [Resistance VR 카드보드용 게임 플레이 영상](https://www.youtube.com/watch?v=4ycKzkzdsoY&t=216sc)
 
 # 개요
-[Resistance VR 기획서](http://www.)
+[Resistance VR 기획서](https://github.com/alsdn14/Resistance/blob/gh-pages/VR%20Resistance.pdf)
 
 VR Cardboard와 Bluetooth 컨트롤러를 이용해서 하는 게임으로 간단한 FPS기반의 인던형식의 게임 입니다.
 
